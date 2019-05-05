@@ -1,6 +1,6 @@
 {
     "name": "pointybeard/helpers-cli-colour",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Provides colour constants and a simple way to colourise strings for use on the command-line.",
     "homepage": "https://github.com/pointybeard/helpers-cli-colour",
     "license": "MIT",

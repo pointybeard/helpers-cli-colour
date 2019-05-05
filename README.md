@@ -1,6 +1,6 @@
 # PHP Helpers: Command-line Colour
 
--   Version: v1.0.0
+-   Version: v1.0.1
 -   Date: May 05 2019
 -   [Release notes](https://github.com/pointybeard/helpers-cli-colour/blob/master/CHANGELOG.md)
 -   [GitHub repository](https://github.com/pointybeard/helpers-cli-colour)
