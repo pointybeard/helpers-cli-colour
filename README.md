@@ -28,25 +28,36 @@ Here is an example of how to use the Colour class:
 
 ```php
 <?php
+
+include __DIR__ . "/vendor/autoload.php";
+
 use pointybeard\Helpers\Cli\Colour;
 
 // Access colour constants
 $foreground = Colour\Colour::FG_RED;
 $background = Colour\Colour::BG_LIGHT_YELLOW;
 
-// Add colour to a string
-print Colour\Colour::colourise(
-    "This is my colouful string!!",
-    $foreground,
-    $background
-);
+try{
 
-// Throws a InvalidColourException exception if the colour is invalid
-Colour\Colour::colouriseString(
-    "Some string",
-    "banana",
-    $background
-);
+    // Add colour to a string
+    print Colour\Colour::colourise(
+        "This is my colouful string!!",
+        $foreground,
+        $background
+    );
+
+    print PHP_EOL;
+
+    // Throws a InvalidColourException exception if the colour is invalid
+    Colour\Colour::colourise(
+        "Some string",
+        "banana",
+        $background
+    );
+
+} catch (Colour\Exceptions\InvalidColourException $ex) {
+    print "ERROR: " . $ex->getMessage() . PHP_EOL;
+}
 
 ```
 
